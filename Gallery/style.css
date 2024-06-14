@@ -1,0 +1,82 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+::-webkit-scrollbar{
+    background-color: white;
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: coral;
+}
+
+::selection{
+    background-color: black;
+}
+
+p::selection{
+    color: coral;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: poppins;
+    margin-top: 50px;
+}
+
+h1{
+    color: coral;
+}
+
+.main-container{
+    columns: 4;
+    padding: 100px;
+    padding-top: 50px;
+    
+}
+
+.main-container img{
+    width: 100%;
+    border-radius: 5px;
+    filter: grayscale(100);
+    transition: all 0.5s ease-in-out;
+}
+
+.image{
+    border: 2px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.main-container p{
+    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+
+}
+
+.main-container div:hover img{
+    filter: grayscale(0);
+    
+}
+
+.image:hover{
+    border: 2px solid coral;
+}
+ 
+footer{
+    margin-bottom: 50px;
+    color: coral;
+    font-weight: 600;
+}
